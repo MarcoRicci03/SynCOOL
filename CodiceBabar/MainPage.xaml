@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prova2.MainPage">
+    <StackLayout HorizontalOptions="FillAndExpand">
+        
+    
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="SYNCOOL" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="40" Spacing="10">
+            <Label Text="Carica il tuo appunto" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+            <Entry x:Name="txtTitolo" HorizontalTextAlignment="Center" Placeholder="Titolo"></Entry>
+            <Entry x:Name="txtTesto" Placeholder="cavvv" HorizontalTextAlignment="Center" HeightRequest="100"></Entry>
+            <Picker Title="Grado">
+                <Picker.Items>
+                    <x:String>Scuola Secondaria di primo grado</x:String>
+                    <x:String>Scuola Secondaria di secondo grado</x:String>
+                    <x:String>Studente universitario</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Scegli scuola">
+                <Picker.Items>
+                    <x:String>Jean Monnet Mariano</x:String>
+                    <x:String>Magistri cumacini</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Upload file" Clicked="Button_clicked"></Button>
+            <Label x:Name="LabelInfo" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+            <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+    </StackLayout>
+</ContentPage>
